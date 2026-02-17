@@ -1,16 +1,30 @@
-# React + Vite
+# ❌⭕️ React Tic Tac Toe Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** https://abcd1924.github.io/react-tic-tac-toe-game/
 
-Currently, two official plugins are available:
+A lightweight Tic Tac Toe game built with React, developed as part of the freeCodeCamp curriculum. This project focuses on simple state management and implementing game logic using React Hooks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+* Two-player (same device) gameplay.
+* Detects winning combinations and highlights the winner.
+* Detects draw conditions when the board is full.
+* Reset button to start a new game.
+* Responsive layout with basic styling.
 
-## React Compiler
+## Technical Implementation: Why `useState`?
+In this freeCodeCamp challenge, the focus is on managing UI state and game logic.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This implementation demonstrates how to:
+1.  **Manage component state:** Keep the board, turn counter, and game status in state using `useState`.
+2.  **Derive game outcome:** Check winning combinations after each move and update state accordingly to stop further moves.
+3.  **Keep logic simple and readable:** Tic Tac Toe is lightweight, so memoization isn't required; clear state updates keep the UI responsive.
 
-## Expanding the ESLint configuration
+## Tech Stack
+- Library: React
+- State Management: `useState`
+- Styling: CSS3 / HTML5
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to run
+1. Clone the repo: git clone https://github.com/abcd1924/react-tic-tac-toe-game
+2. Install dependencies: npm install
+3. Start the dev server: npm start
